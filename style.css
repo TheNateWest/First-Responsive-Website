@@ -31,12 +31,19 @@ background-color: turquoise;
 h2, p {
     text-align: center;
     color: white;
+    max-width: 200px
+
 }
 
 section {
     background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
     
 }
+
 
 /* Bars */
 .container {
@@ -71,11 +78,14 @@ main {grid-area: main;}
         "g-three .";
     }
     #one, #two, #three {
-        width: 300;
+        width: 300px;
         height: 50px;
         margin: 10px auto;
     }
    
+h2, p {
+    max-width: 300px
+}
 
 }
 
