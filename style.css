@@ -6,6 +6,10 @@ main {
     align-items: center;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #one {
 background-color: blue;
 }
@@ -38,7 +42,7 @@ section {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-template-areas:
     "main"
     "g-one"
@@ -71,7 +75,10 @@ main {grid-area: main;}
         height: 50px;
         margin: 10px auto;
     }
+   
+
 }
+
 
 @media (min-width: 992px) {
 
@@ -82,7 +89,7 @@ main {grid-area: main;}
         grid-template-areas:
         "main main main"
         "g-one g-two g-three";
-        
+        height: 100vh;
     }
 
 }
