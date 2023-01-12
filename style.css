@@ -1,6 +1,6 @@
 
 main {
-    background-color: turquoise;
+    background-color: skyblue;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -30,13 +30,13 @@ background-color: turquoise;
 
 h2, p {
     text-align: center;
-    color: white;
+    color: black;
     max-width: 200px
 
 }
 
 section {
-    background-color: black;
+    background-color: white;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -101,5 +101,16 @@ h2, p {
         "g-one g-two g-three";
         height: 100vh;
     }
+main {
+    background-color: turquoise;
+}
+section {
+    background-color: black;
+}
+
+h2, p {
+    color: white;
+
+}
 
 }
