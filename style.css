@@ -1,0 +1,88 @@
+
+main {
+    background-color: turquoise;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#one {
+background-color: blue;
+}
+
+#two {
+background-color: orange;
+}
+
+#three {
+background-color: turquoise;
+}
+
+#one, #two, #three {
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+h2, p {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: black;
+    
+}
+
+/* Bars */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "main"
+    "g-one"
+    "g-two"
+    "g-three";
+}
+
+/* End Bars */
+
+main {grid-area: main;}
+.g-one {grid-area: g-one;}
+.g-two {grid-area: g-two;}
+.g-three {grid-area: g-three;}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "main main"
+        "g-one g-two"
+        "g-three .";
+    }
+    #one, #two, #three {
+        width: 300;
+        height: 50px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "main main main"
+        "g-one g-two g-three";
+        
+    }
+
+}
